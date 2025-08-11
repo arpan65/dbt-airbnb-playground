@@ -1,4 +1,4 @@
-# dbt-airbnb-playground
+# dbt Airbnb Project — Learn by Doing
 
 Welcome to the **dbt Airbnb Project**, a practical, hands-on repository designed to help you learn dbt through real-world examples and active experimentation.
 
@@ -33,7 +33,7 @@ Whether you’re new to dbt or looking to sharpen your skills, this project will
    ```bash
    git clone https://github.com/arpan65/dbt-airbnb.git
    cd dbt-airbnb/my_snowflake_project
-````
+   ```
 
 2. Set up your `profiles.yml` for your target data warehouse (Snowflake in this case).
 
@@ -68,10 +68,10 @@ Visit the docs URL (usually `http://localhost:8080`) to explore your data models
 
 The project is meant to be explored incrementally:
 
-* Start with simple staging models and progress to marts.
-* Explore the macros in the `macros/` folder to understand reusable patterns.
-* Review the tests to see how dbt can catch data issues.
-* Modify models, add your own tests or docs, and see the results live!
+- Start with simple staging models and progress to marts.  
+- Explore the macros in the `macros/` folder to understand reusable patterns.  
+- Review the tests to see how dbt can catch data issues.  
+- Modify models, add your own tests or docs, and see the results live!
 
 ---
 
@@ -84,4 +84,3 @@ Feel free to fork this repo, experiment, and open issues or pull requests for im
 ## License
 
 This project is open source under the MIT License.
-
