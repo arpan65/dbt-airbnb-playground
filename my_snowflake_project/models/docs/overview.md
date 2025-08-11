@@ -19,4 +19,4 @@ This project transforms raw source data into clean, analytics-ready datasets for
 
 ---
 📌 *For technical details, click a model name in the left sidebar.*
-{% enddocs%}
+{% enddocs %}

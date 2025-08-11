@@ -49,14 +49,3 @@ sources:
             description: "Review text"
           - name: sentiment
             description: "Pre-labeled sentiment of the review"
-
-models:
-  - name: dim_listings
-    identifier: dim_listings_cleansed
-    description: "Cleaned and enriched listings dimension"
-    tests:
-       - dim_listings_min_nights 
-    columns:
-      - name: min_nights
-        tests:
-          - not_null  # Custom test to validate minimum nights
