@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: dim_listings_cleansed
+    identifier: dim_listings_cleansed
+    description: "Cleaned and enriched listings dimension"
+    tests:
+      - dim_listings_min_nights
+      - dbt_expectations.expect_table_column_count_to_be_between:
+          min_value: 1
+          max_value: 10
+    columns:
+      - name: minimum_nights
+        tests:
+          - not_null  # Custom test to validate minimum nights
+      - name: listing_id
+        tests:
+          - dbt_expectations.expect_column_values_to_be_unique:
+              row_condition: "listing_id is not null"
+
+  - name: mart_listings_review
+    description: "{{ doc('mart_listings_reviews') }}"
+    columns:
+      - name: LISTING_ID
+        description: Unique Airbnb listing identifier.
+      - name: LISTING_NAME
+        description: Name of the listing.
+      - name: ROOM_TYPE
+        description: Type of room offered.
+      - name: TOTAL_REVIEW
+        description: Total number of reviews for the listing.
+      - name: positive_review_pct
+        description: Percentage of positive sentiment reviews.
+      - name: neutral_review_pct
+        description: Percentage of neutral sentiment reviews.
+      - name: negative_review_pct
+        description: Percentage of negative sentiment reviews.
+      - name: LATEST_REVIEW_DATE
+        description: Most recent review date.
+      - name: CREATED_AT
+        description: Record creation timestamp.
+      - name: UPDATED_AT
+        description: Record update timestamp.

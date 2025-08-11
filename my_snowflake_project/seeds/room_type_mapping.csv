@@ -1,0 +1,5 @@
+room_type_code,room_type_name,description
+entire_home,Entire home/apt,A whole unit with full privacy
+private_room,Private room,A private room in a shared unit
+shared_room,Shared room,A room shared with others
+hotel_room,Hotel room,A traditional hotel-style room
