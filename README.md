@@ -14,7 +14,11 @@ Whether you’re new to dbt or looking to sharpen your skills, this project will
 - Defining **tests** to ensure data quality  
 - Creating and linking **documentation** with `{% docs %}` blocks  
 - Managing project configuration in `dbt_project.yml`  
-- Using dbt’s **docs generation** and **serve** features  
+- Using dbt’s **docs generation** and **serve** features 
+
+## Architecture
+
+![DBT Airbnb Architecture](diagrams/dbt-airbnb-architecture.drawio.png) 
 
 ## Project Structure
 
@@ -63,6 +67,12 @@ Whether you’re new to dbt or looking to sharpen your skills, this project will
    ```
 
 Visit the docs URL (usually `http://localhost:8080`) to explore your data models and documentation interactively.
+
+## Related Article
+
+[![Unlocking the Power of dbt: A Real-World Walkthrough with Airbnb Data on Snowflake](./path/to/your-screenshot.png)](https://medium.com/@arpandas65/unlocking-the-power-of-dbt-a-real-world-walkthrough-with-airbnb-data-on-snowflake-213fdb27d7ca)
+
+*Unlocking the Power of dbt: A Real-World Walkthrough with Airbnb Data on Snowflake* — A step-by-step explanation of how dbt transforms Airbnb data in Snowflake.
 
 ## Learn by Doing
 
